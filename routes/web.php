@@ -32,5 +32,5 @@ Route::get('graph/login', function () {
 Route::get('dump', function () {
     $user = Socialite::driver('graph')->user();
     $accessTokenResponseBody = $user->accessTokenResponseBody;
-    dd(request()->all(), $user, $accessTokenResponseBody);
+    dd('request()->all()', request()->all(), '$user', $user, '$accessTokenResponseBody', $accessTokenResponseBody);
 });
