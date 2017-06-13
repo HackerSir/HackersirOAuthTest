@@ -176,6 +176,7 @@ return [
         Arcanedev\LogViewer\LogViewerServiceProvider::class,
         Yajra\Datatables\DatatablesServiceProvider::class,
         Recca0120\LaravelTracy\LaravelTracyServiceProvider::class,
+        SocialiteProviders\Manager\ServiceProvider::class,
 
         /*
          * Application Service Providers...
