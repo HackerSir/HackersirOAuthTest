@@ -24,7 +24,7 @@ Route::get('graph/login', function () {
     $additionalProviderConfig = ['site' => 'o365.fcu.edu.tw'];
     $config = new \SocialiteProviders\Manager\Config($clientId, $clientSecret, $redirectUrl, $additionalProviderConfig);
 
-    return Socialite::with('graph')->scopes(['email', 'profile', 'User.Read'])
+    return Socialite::with('graph')->scopes(['openid', 'email', 'profile', 'User.Read'])
         ->setConfig($config)->redirect();
 
 });
